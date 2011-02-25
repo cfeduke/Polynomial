@@ -23,8 +23,8 @@ static CGRect funcRect = { -20, -20, 40, 40 };
 	color = CGColorCreateGenericRGB(RANDFLOAT(), RANDFLOAT(), RANDFLOAT(), 0.5);
 	CFMakeCollectable(color);
 	
-	termCount = (random()%3)+2;
-	terms = NSAllocateCollectable(termCount * sizeOf(CGFloat), 0);
+	termCount = (random() % 3) + 2;
+	terms = NSAllocateCollectable(termCount * sizeof(CGFloat), 0);
 	
 	int i;
 	for (i = 0; i < termCount; i++) {
