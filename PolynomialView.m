@@ -97,7 +97,25 @@
 }
 
 -(IBAction)blast:(id)sender {
+	NSLog(@"blast:");
+	[NSAnimationContext beginGrouping];
+	[[NSAnimationContext currentContext] setDuration:3.0];
+	NSArray *polynomialLayers = [[self layer]sublayers];
 	
+	for (CALayer *layer in polynomialLayers) {
+		CGPoint p;
+		if (blasted) {
+			p = CGPointMake(MARGIN, MARGIN);
+		} else {
+			NSPoint r = [self randomOffViewPosition];
+			p = *(CGPoint *)&r;
+		}
+		
+		[layer setPosition:p];
+	}
+	
+	[NSAnimationContext endGrouping];
+	blasted = !blasted;
 }
 
 -(NSPoint)randomOffViewPosition {
