@@ -16,7 +16,7 @@
 - (id)initWithFrame:(NSRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        [[NSMutableArray alloc] init];
+        polynomials = [[NSMutableArray alloc] init];
     }
     return self;
 }
