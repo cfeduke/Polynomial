@@ -11,6 +11,7 @@
 		256AC3DA0F4B6AC300CF3369 /* PolynomialAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* PolynomialAppDelegate.m */; };
 		8C1601E6131854F900A01260 /* Polynomial.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1601E5131854F900A01260 /* Polynomial.m */; };
 		8C1601F91318592600A01260 /* PolynomialView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1601F81318592600A01260 /* PolynomialView.m */; };
+		8C16020B131AEDA200A01260 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C16020A131AEDA200A01260 /* QuartzCore.framework */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -31,6 +32,7 @@
 		8C1601E5131854F900A01260 /* Polynomial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Polynomial.m; sourceTree = "<group>"; };
 		8C1601F71318592600A01260 /* PolynomialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolynomialView.h; sourceTree = "<group>"; };
 		8C1601F81318592600A01260 /* PolynomialView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PolynomialView.m; sourceTree = "<group>"; };
+		8C16020A131AEDA200A01260 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		8D1107310486CEB800E47090 /* Polynomial-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Polynomial-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Polynomial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Polynomial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -41,6 +43,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				8C16020B131AEDA200A01260 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				8C16020A131AEDA200A01260 /* QuartzCore.framework */,
 			);
 			name = "Linked Frameworks";
 			sourceTree = "<group>";

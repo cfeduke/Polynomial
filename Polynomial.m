@@ -78,6 +78,11 @@ static CGRect funcRect = { -20, -20, 40, 40 };
 	return color;
 }
 
+- (void)drawLayer:(CALayer *)layer inContext:(CGContextRef)ctx {
+	CGRect cgb = [layer bounds];
+	[self drawInRect:cgb inContext:ctx];
+}
+
 -(void)finalize {
 	NSLog(@"finalizing %@", self);
 	[super finalize];
