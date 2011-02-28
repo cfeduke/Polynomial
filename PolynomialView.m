@@ -12,6 +12,12 @@
 
 #define MARGIN (10)
 
+@interface PolynomialView()
+
+-(void)resizeAndRedrawPolynomialLayers;
+
+@end
+
 
 @implementation PolynomialView
 
@@ -116,6 +122,31 @@
 	
 	[NSAnimationContext endGrouping];
 	blasted = !blasted;
+}
+
+-(void)resizeAndRedrawPolynomialLayers {
+	CGRect b = [[self layer] bounds];
+	b = CGRectInset(b, MARGIN, MARGIN);
+	NSArray *polynomialLayers = [[self layer] sublayers];
+	[NSAnimationContext beginGrouping];
+	[[NSAnimationContext currentContext] setDuration:0];
+	for (CALayer *layer in polynomialLayers) {
+		b.origin = [layer frame].origin;
+		[layer setFrame:b];
+		[layer setNeedsDisplay];
+	}
+	[NSAnimationContext endGrouping];
+}
+
+-(void)setFrameSize:(NSSize)newSize {
+	[super setFrameSize:newSize];
+	if (![self inLiveResize]) {
+		[self resizeAndRedrawPolynomialLayers];
+	}
+}
+
+-(void)viewDidEndLiveResize {
+	[self resizeAndRedrawPolynomialLayers];
 }
 
 -(NSPoint)randomOffViewPosition {

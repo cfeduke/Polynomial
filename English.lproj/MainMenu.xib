@@ -1326,7 +1326,7 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSCustomView" id="699875127">
 							<reference key="NSNextResponder" ref="439893737"/>
-							<int key="NSvFlags">268</int>
+							<int key="NSvFlags">274</int>
 							<string key="NSFrame">{{20, 43}, {440, 297}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<bool key="NSViewIsLayerTreeHost">YES</bool>
@@ -1335,7 +1335,7 @@
 						</object>
 						<object class="NSButton" id="1046129825">
 							<reference key="NSNextResponder" ref="439893737"/>
-							<int key="NSvFlags">268</int>
+							<int key="NSvFlags">292</int>
 							<string key="NSFrame">{{20, 13}, {106, 23}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<bool key="NSEnabled">YES</bool>
@@ -1359,7 +1359,7 @@
 						</object>
 						<object class="NSButton" id="926694197">
 							<reference key="NSNextResponder" ref="439893737"/>
-							<int key="NSvFlags">268</int>
+							<int key="NSvFlags">292</int>
 							<string key="NSFrame">{{134, 13}, {106, 23}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<bool key="NSEnabled">YES</bool>
@@ -1377,18 +1377,18 @@
 								<int key="NSPeriodicInterval">75</int>
 							</object>
 						</object>
-						<object class="NSButton" id="524318223">
+						<object class="NSButton" id="75798716">
 							<reference key="NSNextResponder" ref="439893737"/>
-							<int key="NSvFlags">268</int>
+							<int key="NSvFlags">292</int>
 							<string key="NSFrame">{{248, 13}, {106, 23}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<bool key="NSEnabled">YES</bool>
-							<object class="NSButtonCell" key="NSCell" id="525932573">
+							<object class="NSButtonCell" key="NSCell" id="860909321">
 								<int key="NSCellFlags">-2080244224</int>
 								<int key="NSCellFlags2">134217728</int>
 								<string key="NSContents">Blast</string>
 								<reference key="NSSupport" ref="208084942"/>
-								<reference key="NSControlView" ref="524318223"/>
+								<reference key="NSControlView" ref="75798716"/>
 								<int key="NSButtonFlags">-2033434369</int>
 								<int key="NSButtonFlags2">162</int>
 								<string key="NSAlternateContents"/>
@@ -2114,7 +2114,7 @@
 					<object class="IBActionConnection" key="connection">
 						<string key="label">blast:</string>
 						<reference key="source" ref="699875127"/>
-						<reference key="destination" ref="524318223"/>
+						<reference key="destination" ref="75798716"/>
 					</object>
 					<int key="connectionID">545</int>
 				</object>
@@ -2678,7 +2678,7 @@
 							<reference ref="699875127"/>
 							<reference ref="1046129825"/>
 							<reference ref="926694197"/>
-							<reference ref="524318223"/>
+							<reference ref="75798716"/>
 						</object>
 						<reference key="parent" ref="972006081"/>
 					</object>
@@ -3203,17 +3203,17 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">542</int>
-						<reference key="object" ref="524318223"/>
+						<reference key="object" ref="75798716"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="525932573"/>
+							<reference ref="860909321"/>
 						</object>
 						<reference key="parent" ref="439893737"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">543</int>
-						<reference key="object" ref="525932573"/>
-						<reference key="parent" ref="524318223"/>
+						<reference key="object" ref="860909321"/>
+						<reference key="parent" ref="75798716"/>
 					</object>
 				</object>
 			</object>
